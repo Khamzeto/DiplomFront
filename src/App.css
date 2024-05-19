@@ -1,0 +1,334 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.filter-mob {
+  display: none;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.crop_cont {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+.textGray {
+  color: #6f767e;
+}
+.studcard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Начало слева */
+}
+
+@media (max-width: 1400px) {
+  .title {
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  .title-cont {
+    width: 70%;
+  }
+  .desc {
+    width: 64%;
+  }
+  .student-card {
+    width: 30%;
+  }
+}
+
+.img-container {
+  width: 100%;
+  height: 209px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1138px) {
+  .sort-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .student-card {
+    width: 30%;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .muchStud {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1070px) {
+  .student-card {
+    width: 50%;
+    margin-right: none;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .muchStud {
+    font-size: 20px;
+  }
+  .filters {
+    width: 40%;
+  }
+  .stud-cont {
+    justify-content: space-between;
+    width: 96%;
+  }
+}
+@media (max-width: 964px) {
+  .stud-cont {
+    justify-content: flex-start;
+    width: 96%;
+  }
+  .student-card {
+    width: 30%;
+  }
+  .searchStud {
+    display: none;
+  }
+  .filters {
+    display: none;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .desc {
+    width: 76%;
+  }
+  .filter-mob {
+    display: block !important;
+  }
+}
+
+/* Стили для телефона */
+@media (max-width: 799px) {
+  .nameStud {
+    font-size: 13px;
+    margin-top: 1%;
+  }
+  .student-card {
+    width: 45%;
+    margin-right: none;
+  }
+  .stud-cont {
+    justify-content: space-between;
+    width: 96%;
+    margin-right: 2%;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+  .desc {
+    width: 80%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .select {
+    height: 25px;
+    border-radius: 4.78px;
+    min-width: 100px;
+  }
+  .sort-text {
+    font-size: 8px;
+    position: relative;
+    left: 1%;
+  }
+  .sort-first {
+    max-width: 12px;
+    min-width: 12px;
+  }
+  .sort-second {
+    max-width: 12px;
+    min-width: 12px;
+    position: relative;
+    left: 8%;
+  }
+  .student-card {
+    width: 47%;
+    margin-right: 2%;
+
+    margin-bottom: 4%;
+    min-height: 290px;
+  }
+  .stud-cont {
+    justify-content: space-between;
+    width: 90%;
+
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
+
+  .title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 1%;
+  }
+  .desc {
+    width: 80%;
+    font-size: 8px;
+  }
+  .ava-name {
+    display: flex;
+    flex-direction: column;
+  }
+  .avatar {
+    width: 100%;
+  }
+  .text-mob {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .podrob {
+    width: 100%;
+    max-width: 150px;
+  }
+  .skills {
+    display: flex;
+    width: 100%;
+  }
+  .skills-cont {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .skill {
+    width: 40%;
+    margin-bottom: 4%;
+  }
+  .filterMobCont {
+    height: 25px;
+    max-width: 100px;
+    margin-left: 4%;
+  }
+  .btn-mob {
+    height: 25px;
+    width: 25px;
+    border-radius: 5.208px;
+  }
+  .svg-icon {
+    width: 11.9px;
+  }
+  .title-cont {
+    width: 90%;
+  }
+  .img-container {
+    width: 100%;
+    height: 108px;
+  }
+  .directionStud {
+    font-size: 11px;
+    margin-top: 1%;
+  }
+}
+@media (max-width: 370px) {
+  .student-card {
+    width: 70%;
+
+    margin-bottom: 12%;
+    min-height: 290px;
+  }
+  .stud-cont {
+    justify-content: center;
+    width: 90%;
+    margin-right: 0%;
+    flex-wrap: wrap;
+    margin-top: 4%;
+  }
+}
+@media (max-width: 720px) {
+  .skills-col {
+    display: none;
+  }
+  .podrob-col {
+    min-width: 70px;
+  }
+}
+@media (max-width: 509px) {
+  .main-cont {
+  }
+
+  .input-data {
+    font-size: 30px;
+    max-width: 80%;
+  }
+  .desc-data {
+    position: relative;
+    top: 34%;
+  }
+  .cont-input {
+    position: relative;
+    top: 28%;
+  }
+  .modal-data {
+    height: 580px;
+    justify-items: start !important;
+    justify-content: start !important;
+  }
+  .mob-email {
+    display: block !important;
+  }
+  .desk-email {
+    display: none;
+  }
+  .modal-cont {
+    justify-items: start !important;
+    justify-content: start !important;
+  }
+  .sendBtn {
+    position: relative;
+    top: 50%;
+  }
+}
+
+@media (max-width: 429px) {
+  .suc-modal {
+    height: 340px;
+  }
+  .close-suc {
+    top: 40%;
+  }
+}
+.mob-email {
+  display: none;
+}
